@@ -1,0 +1,10 @@
+function countdownFrom(num) {
+    console.log(num);
+    if (num > 1) {
+      setTimeout(() => countdownFrom(num - 1), 1000);
+    } else {
+      setTimeout(() => {
+        console.log("Happy Independence Day!");
+      }, 1000);
+    }
+  }
